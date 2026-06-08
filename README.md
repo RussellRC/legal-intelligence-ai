@@ -55,7 +55,14 @@ PORT=8000
 
 `project/solution/tests` directory: Contains provided test files
 
+`project/outputs` directory: 
+
 ## Prerequisites
+Activate the environment with `venv`
+```shell
+source .venv/bin/activate
+```
+
 Before starting, ensure the environment is properly configured:
 ```shell
 cd project/solution
