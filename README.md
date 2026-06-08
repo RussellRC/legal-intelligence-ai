@@ -8,18 +8,17 @@ of the **Udacity Google Agentic AI Engineer** Nanodegree program.
 ### Dependencies
 
 * **Python 3.14+**
+* **venv**: For isolated virutal environment and dependency management
 * **Env Keys**:
     * PROJECT_ID: Google Cloud Project ID
-    * GOOGLE_APPLICATION_CREDENTIALS: Path to IAM Service Account Credentials  
-
-To install Poetry, follow the instructions: https://python-poetry.org/docs/
+    * GOOGLE_APPLICATION_CREDENTIALS: Path to IAM Service Account Credentials
 
 ### Installation
 
 **1\. Clone the repository**
 
 **2\. Install dependencies**\
-Use venv to create a virtual environment and install the required packages.\
+Use `venv` to create a virtual environment and install the required packages.\
 From the root project directory, run the following commands:
 ```shell
 python -m venv .venv
@@ -43,19 +42,26 @@ PORT=8000
 ```
 
 ## Project Structure
-`project` directory: Contains [Project Overview](project/PROJECT_OVERVIEW.md), [README.md](project/README.md), and `requirements.txt` files
 
-`project/starter` directory: Contains the **untouched** starter template.
+The project is organized into the following key directories and files:
 
-`project/solution/main.py`: Application entry point.
+*   **`project/`**: The root directory for the project, containing:
+    *   **`PROJECT_OVERVIEW.md`**: Project Overview from the Udacity project page.
+    *   **`README.md`**: Provided `README.md` file from the Udacity project page.
+    *   **`requirements.txt`**: Lists all Python dependencies required for the project.
 
-`project/solution/test_setup.py`: Provided test file that ensures that the environment is properly configured.
+*   **`project/starter/`**: Contains the original, **untouched** starter template code.
 
-`project/solution/src` directory: Contains the implementation files
+*   **`project/solution/`**: Houses the developed solution, including:
+    *   **`main.py`**: The primary application entry point (provided).
+    *   **`test_setup.py`**: A utility script to verify the environment configuration (provided).
+    *   **`src/`**: Contains the developed core implementation logic and source code.
+    *   **`tests/`**: Includes all test files for the solution (provided).
 
-`project/solution/tests` directory: Contains provided test files
-
-`project/outputs` directory: 
+*   **`project/outputs/`**: Stores evidence of successful application executions and test runs:
+    *   **`test_todos_output.*`**: Output from successful execution of `test_todos.py`.
+    *   **`main.png`**: Screenshot or evidence of the main application running successfully.
+    *   **`scenario_N - *`**: Request and response files generated when running the application with scenarios from `test_scenarios.json`.
 
 ## Prerequisites
 Activate the environment with `venv`
@@ -76,6 +82,7 @@ This should show:
 
 ## Running the application
 ```shell
+cd project/solution
 python main.py
 ```
 
